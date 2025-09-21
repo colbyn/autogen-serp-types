@@ -6,3 +6,18 @@ Using `json-osi` [here](https://github.com/colbyn/json-osi).
 
 
 For backwards compatibility I will be namespacing models via greek letters beginning with `alpha`, backwards incompatible models will then increment from there to ensure legacy data can still be parsed and deserialized in data ingestation systems.
+
+```
+.
+└── src
+    ├── google_search_tbm_map
+    │   ├── entity_schema
+    │   │   ├── alpha.rs 👈 notice 'alpha'
+    │   │   └── mod.rs
+    │   └── mod.rs
+    └── lib.rs
+```
+
+- Alpha is the initial schema at the time of publishing this crate.
+- Subsequent (backwards incompatible) models will then be namespaced under 'beta', 'gamma', and etc.
+
