@@ -78,7 +78,7 @@ impl<'de> ::serde::Deserialize<'de> for Root01010ItemAlt0ItemAlt02Alt1 {
         Ok(Root01010ItemAlt0ItemAlt02Alt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root01010ItemAlt0ItemAlt02 {
     V0(::std::vec::Vec<Null>),
     V1(Root01010ItemAlt0ItemAlt02Alt1),
@@ -114,7 +114,7 @@ impl<'de> ::serde::Deserialize<'de> for Root01010ItemAlt0ItemAlt02 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root01010ItemAlt0ItemAlt0(
     pub Null,
     pub ::core::option::Option<Root01010ItemAlt0ItemAlt01>,
@@ -170,7 +170,7 @@ impl<'de> ::serde::Deserialize<'de> for Root01010ItemAlt0ItemAlt1 {
         Ok(Root01010ItemAlt0ItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root01010ItemAlt0Item {
     V0(Root01010ItemAlt0ItemAlt0),
     V1(Root01010ItemAlt0ItemAlt1),
@@ -229,7 +229,7 @@ impl<'de> ::serde::Deserialize<'de> for Root01010ItemAlt1 {
         Ok(Root01010ItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root01010Item {
     V0(::std::vec::Vec<Root01010ItemAlt0Item>),
     V1(Root01010ItemAlt1),
@@ -272,7 +272,7 @@ impl<'de> ::serde::Deserialize<'de> for Root01010Item {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root01012(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -309,7 +309,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=19 (required first 0 slots); accepts 0..=19 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root010(
     pub ::core::option::Option<Null>,
     pub ::core::option::Option<Null>,
@@ -397,7 +397,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"at most the 
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root01(
     pub Root010,
 );
@@ -448,7 +448,7 @@ impl<'de> ::serde::Deserialize<'de> for Root03 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root05(
     pub ::std::string::String,
 );
@@ -516,7 +516,7 @@ impl<'de> ::serde::Deserialize<'de> for Root011 {
     }
 }
 /// tuple len=12 (required exactly 12)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root0(
     pub ::std::string::String,
     pub Root01,
@@ -637,7 +637,7 @@ impl<'de> ::serde::Deserialize<'de> for Root102 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root10(
     pub Root100,
     pub Root101,
@@ -728,7 +728,7 @@ impl<'de> ::serde::Deserialize<'de> for Root112 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root11(
     pub Root110,
     pub Root111,
@@ -802,7 +802,7 @@ impl<'de> ::serde::Deserialize<'de> for Root121 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root12(
     pub Root120,
     pub Root121,
@@ -857,7 +857,7 @@ impl<'de> ::serde::Deserialize<'de> for Root13 {
     }
 }
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1(
     pub Root10,
     pub Root11,
@@ -936,7 +936,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item203 {
     }
 }
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item20(
     pub Null,
     pub Null,
@@ -979,7 +979,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item23(
     pub ::std::string::String,
 );
@@ -1048,7 +1048,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item26 {
     }
 }
 /// tuple len=7 (required first 0 slots); accepts 0..=7 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item2(
     pub ::core::option::Option<Root2ItemAlt00Item20>,
     pub ::core::option::Option<Null>,
@@ -1138,7 +1138,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item34 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item37(
     pub ::std::string::String,
     pub ::core::option::Option<::std::string::String>,
@@ -1195,7 +1195,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item39ItemAlt0 {
         Ok(Root2ItemAlt00Item39ItemAlt0(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root2ItemAlt00Item39Item {
     V0(Root2ItemAlt00Item39ItemAlt0),
     V1(::std::string::String),
@@ -1231,7 +1231,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item39Item {
     }
 }
 /// tuple len=10 (required first 0 slots); accepts 0..=10 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item3(
     pub ::core::option::Option<Root2ItemAlt00Item30>,
     pub ::core::option::Option<Null>,
@@ -1328,7 +1328,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item52 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item53Item(
     pub ::std::string::String,
 );
@@ -1362,7 +1362,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=6 (required exactly 6)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item5(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -1530,7 +1530,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item644 {
     }
 }
 /// tuple len=5 (required exactly 5)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item64(
     pub Root2ItemAlt00Item640,
     pub Root2ItemAlt00Item641,
@@ -1610,7 +1610,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item66 {
     }
 }
 /// tuple len=7 (required exactly 7)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item6(
     pub Root2ItemAlt00Item60,
     pub Root2ItemAlt00Item61,
@@ -1715,7 +1715,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item13100 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item1310(
     pub Root2ItemAlt00Item13100,
 );
@@ -1749,7 +1749,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item131(
     pub Root2ItemAlt00Item1310,
 );
@@ -1783,7 +1783,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item13(
     pub Null,
     pub Root2ItemAlt00Item131,
@@ -1854,7 +1854,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt00Item16Item0 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item16Item(
     pub Root2ItemAlt00Item16Item0,
 );
@@ -1888,7 +1888,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=17 (required first 0 slots); accepts 0..=17 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt00Item(
     pub ::core::option::Option<::std::string::String>,
     pub ::core::option::Option<::std::string::String>,
@@ -2212,7 +2212,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt01151 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt0115(
     pub Root2ItemAlt01150,
     pub Root2ItemAlt01151,
@@ -2368,7 +2368,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt01251 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt0125(
     pub Root2ItemAlt01250,
     pub Root2ItemAlt01251,
@@ -2524,7 +2524,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt01371 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt0137(
     pub Root2ItemAlt01370,
     pub Root2ItemAlt01371,
@@ -2561,7 +2561,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=38 (required exactly 38)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt01(
     pub Root2ItemAlt010,
     pub Root2ItemAlt011,
@@ -2706,7 +2706,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2ItemAlt0(
     pub ::std::vec::Vec<Root2ItemAlt00Item>,
     pub Root2ItemAlt01,
@@ -2759,7 +2759,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2ItemAlt1 {
         Ok(Root2ItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root2Item {
     V0(Root2ItemAlt0),
     V1(Root2ItemAlt1),
@@ -2812,7 +2812,7 @@ impl<'de> ::serde::Deserialize<'de> for Root90Item0 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root90Item(
     pub Root90Item0,
 );
@@ -2846,7 +2846,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root9(
     pub ::std::vec::Vec<Root90Item>,
 );
@@ -2931,7 +2931,7 @@ impl<'de> ::serde::Deserialize<'de> for Root100Item12 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root100Item1(
     pub Root100Item10,
     pub Root100Item11,
@@ -3005,7 +3005,7 @@ impl<'de> ::serde::Deserialize<'de> for Root100Item3Item {
     }
 }
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root100Item(
     pub ::std::string::String,
     pub Root100Item1,
@@ -3048,7 +3048,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root103(
     pub ::std::vec::Vec<Root100Item>,
 );
@@ -3099,7 +3099,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16000 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1600(
     pub Root16000,
     pub ::std::string::String,
@@ -3136,7 +3136,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root160(
     pub Root1600,
 );
@@ -3170,7 +3170,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root163003(
     pub ::std::string::String,
 );
@@ -3204,7 +3204,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root16300(
     pub Null,
     pub Null,
@@ -3264,7 +3264,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16304ItemItemAlt0ItemAlt0ItemAlt0 {
         Ok(Root16304ItemItemAlt0ItemAlt0ItemAlt0(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root16304ItemItemAlt0ItemAlt0Item {
     V0(Root16304ItemItemAlt0ItemAlt0ItemAlt0),
     V1(::std::string::String),
@@ -3316,7 +3316,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16304ItemItemAlt0ItemAlt1 {
         Ok(Root16304ItemItemAlt0ItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root16304ItemItemAlt0Item {
     V0(::std::vec::Vec<::core::option::Option<Root16304ItemItemAlt0ItemAlt0Item>>),
     V1(Root16304ItemItemAlt0ItemAlt1),
@@ -3376,7 +3376,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16304ItemItemAlt1 {
         Ok(Root16304ItemItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root16304ItemItem {
     V0(::std::vec::Vec<::core::option::Option<Root16304ItemItemAlt0Item>>),
     V1(Root16304ItemItemAlt1),
@@ -3471,7 +3471,7 @@ impl<'de> ::serde::Deserialize<'de> for Root163012ItemAlt0ItemItem2 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root163012ItemAlt0ItemItem(
     pub ::std::string::String,
     pub Null,
@@ -3528,7 +3528,7 @@ impl<'de> ::serde::Deserialize<'de> for Root163012ItemAlt1 {
         Ok(Root163012ItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root163012Item {
     V0(::std::vec::Vec<::std::vec::Vec<Root163012ItemAlt0ItemItem>>),
     V1(Root163012ItemAlt1),
@@ -3581,7 +3581,7 @@ impl<'de> ::serde::Deserialize<'de> for Root163016 {
     }
 }
 /// tuple len=17 (required exactly 17)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1630(
     pub ::core::option::Option<Root16300>,
     pub ::std::string::String,
@@ -3663,7 +3663,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root163(
     pub Root1630,
 );
@@ -3748,7 +3748,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16401006802 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640100680(
     pub Root16401006800,
     pub Root16401006801,
@@ -3839,7 +3839,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16401006812 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640100681(
     pub Root16401006810,
     pub Root16401006811,
@@ -3896,7 +3896,7 @@ impl<'de> ::serde::Deserialize<'de> for Root1640100682 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root164010068(
     pub Root1640100680,
     pub Root1640100681,
@@ -3936,7 +3936,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=9 (required exactly 9)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root16401006(
     pub Null,
     pub Null,
@@ -3994,7 +3994,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=7 (required exactly 7)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640100(
     pub Null,
     pub Null,
@@ -4046,7 +4046,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item0(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -4117,7 +4117,7 @@ impl<'de> ::serde::Deserialize<'de> for Root1640104Item31 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item3(
     pub Root1640104Item30,
     pub Root1640104Item31,
@@ -4222,7 +4222,7 @@ impl<'de> ::serde::Deserialize<'de> for Root1640104Item18012 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item1801(
     pub Root1640104Item18010,
     pub Root1640104Item18011,
@@ -4262,7 +4262,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item180(
     pub Root1640104Item1800,
     pub Root1640104Item1801,
@@ -4299,7 +4299,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item18(
     pub Root1640104Item180,
 );
@@ -4350,7 +4350,7 @@ impl<'de> ::serde::Deserialize<'de> for Root1640104Item191 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item19(
     pub Null,
     pub Root1640104Item191,
@@ -4387,7 +4387,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=20 (required first 0 slots); accepts 0..=20 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640104Item(
     pub ::core::option::Option<Root1640104Item0>,
     pub ::core::option::Option<::std::string::String>,
@@ -4563,7 +4563,7 @@ impl<'de> ::serde::Deserialize<'de> for Root164010632 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root16401063(
     pub Root164010630,
     pub Root164010631,
@@ -4654,7 +4654,7 @@ impl<'de> ::serde::Deserialize<'de> for Root164010610 {
     }
 }
 /// tuple len=11 (required exactly 11)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640106(
     pub Null,
     pub Null,
@@ -4837,7 +4837,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16401095 {
     }
 }
 /// tuple len=6 (required exactly 6)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640109(
     pub Root16401090,
     pub Root16401091,
@@ -4903,7 +4903,7 @@ impl<'de> ::serde::Deserialize<'de> for Root164010121 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root16401012(
     pub ::std::vec::Vec<Null>,
     pub Root164010121,
@@ -4957,7 +4957,7 @@ impl<'de> ::serde::Deserialize<'de> for Root16401016 {
     }
 }
 /// tuple len=17 (required exactly 17)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root164010(
     pub Root1640100,
     pub ::std::string::String,
@@ -5039,7 +5039,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root16401(
     pub Root164010,
 );
@@ -5073,7 +5073,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root1640(
     pub ::std::string::String,
     pub Root16401,
@@ -5110,7 +5110,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root164(
     pub Root1640,
 );
@@ -5144,7 +5144,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=5 (required first 0 slots); accepts 0..=5 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root16(
     pub ::core::option::Option<Root160>,
     pub ::core::option::Option<Null>,
@@ -5258,7 +5258,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21003 {
     }
 }
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2100(
     pub Root21000,
     pub Root21001,
@@ -5301,7 +5301,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root210(
     pub Root2100,
     pub ::std::string::String,
@@ -5508,7 +5508,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21109 {
     }
 }
 /// tuple len=10 (required exactly 10)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2110(
     pub Root21100,
     pub Root21101,
@@ -5569,7 +5569,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root211(
     pub Root2110,
     pub ::std::string::String,
@@ -5606,7 +5606,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root212(
     pub ::std::string::String,
 );
@@ -5810,7 +5810,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21309 {
     }
 }
 /// tuple len=10 (required exactly 10)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2130(
     pub Root21300,
     pub Root21301,
@@ -5871,7 +5871,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root213(
     pub Root2130,
     pub ::std::string::String,
@@ -5908,7 +5908,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root214(
     pub ::std::string::String,
 );
@@ -5942,7 +5942,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2170(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -5982,7 +5982,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2171(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6022,7 +6022,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2172(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6062,7 +6062,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2173(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6102,7 +6102,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2174(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6142,7 +6142,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2175(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6182,7 +6182,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2176(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6222,7 +6222,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2177(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6262,7 +6262,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2178(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6302,7 +6302,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2179(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6342,7 +6342,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root21710(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6382,7 +6382,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root21711(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6422,7 +6422,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root21712(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6462,7 +6462,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root21713(
     pub ::std::string::String,
     pub ::std::string::String,
@@ -6502,7 +6502,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=14 (required exactly 14)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root217(
     pub Root2170,
     pub Root2171,
@@ -6592,7 +6592,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21900 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2190(
     pub Root21900,
     pub ::std::string::String,
@@ -6649,7 +6649,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21910 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2191(
     pub Root21910,
     pub ::std::string::String,
@@ -6706,7 +6706,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21920 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2192(
     pub Root21920,
     pub ::std::string::String,
@@ -6763,7 +6763,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21930 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2193(
     pub Root21930,
     pub ::std::string::String,
@@ -6803,7 +6803,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root219(
     pub Root2190,
     pub Root2191,
@@ -6863,7 +6863,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21130 {
     }
 }
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2113(
     pub Root21130,
     pub ::std::string::String,
@@ -6917,7 +6917,7 @@ impl<'de> ::serde::Deserialize<'de> for Root21140 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2114(
     pub Root21140,
     pub ::std::string::String,
@@ -6957,7 +6957,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=16 (required exactly 16)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root21(
     pub ::core::option::Option<Root210>,
     pub ::core::option::Option<Root211>,
@@ -7070,7 +7070,7 @@ impl<'de> ::serde::Deserialize<'de> for Root270 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root27(
     pub Root270,
 );
@@ -7121,7 +7121,7 @@ impl<'de> ::serde::Deserialize<'de> for Root290000 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root290001104(
     pub ::std::string::String,
 );
@@ -7206,7 +7206,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2900011013402 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root290001101340(
     pub Root2900011013400,
     pub Root2900011013401,
@@ -7297,7 +7297,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2900011013412 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root290001101341(
     pub Root2900011013410,
     pub Root2900011013411,
@@ -7439,7 +7439,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2900011013482 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root290001101348(
     pub Root2900011013480,
     pub Root2900011013481,
@@ -7479,7 +7479,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=9 (required exactly 9)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root29000110134(
     pub Root290001101340,
     pub Root290001101341,
@@ -7537,7 +7537,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=5 (required exactly 5)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2900011013(
     pub Null,
     pub Null,
@@ -7583,7 +7583,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=14 (required first 0 slots); accepts 0..=14 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root29000110(
     pub ::core::option::Option<Null>,
     pub ::core::option::Option<Null>,
@@ -7656,7 +7656,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"at most the 
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2900011(
     pub Root29000110,
 );
@@ -7690,7 +7690,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root290001(
     pub Null,
     pub Root2900011,
@@ -7727,7 +7727,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root29000(
     pub Root290000,
     pub Root290001,
@@ -7764,7 +7764,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2900(
     pub Root29000,
 );
@@ -7865,7 +7865,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2901Item9ItemItemAlt0 {
         Ok(Root2901Item9ItemItemAlt0(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root2901Item9ItemItem {
     V0(Root2901Item9ItemItemAlt0),
     V1(::std::string::String),
@@ -7901,7 +7901,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2901Item9ItemItem {
     }
 }
 /// tuple len=10 (required first 0 slots); accepts 0..=10 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2901Item(
     pub ::core::option::Option<Root2901Item0>,
     pub ::core::option::Option<Root2901Item1>,
@@ -7981,7 +7981,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt010 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt01(
     pub Root2902ItemItemAlt0ItemItemAlt010,
 );
@@ -8015,7 +8015,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt04(
     pub ::std::string::String,
 );
@@ -8066,7 +8066,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt0600 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt060(
     pub Root2902ItemItemAlt0ItemItemAlt0600,
 );
@@ -8100,7 +8100,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt06(
     pub Root2902ItemItemAlt0ItemItemAlt060,
     pub Null,
@@ -8157,7 +8157,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt0100 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt0101(
     pub Root2902ItemItemAlt0ItemItemAlt0100,
 );
@@ -8208,7 +8208,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt0160 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt016(
     pub Root2902ItemItemAlt0ItemItemAlt0160,
 );
@@ -8293,7 +8293,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt01742 {
     }
 }
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt0174(
     pub Root2902ItemItemAlt0ItemItemAlt01740,
     pub Null,
@@ -8350,7 +8350,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt01750 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt0175(
     pub Root2902ItemItemAlt0ItemItemAlt01750,
 );
@@ -8384,7 +8384,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=6 (required exactly 6)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt017(
     pub Root2902ItemItemAlt0ItemItemAlt0170,
     pub Null,
@@ -8450,7 +8450,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt0180 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt018(
     pub Root2902ItemItemAlt0ItemItemAlt0180,
 );
@@ -8518,7 +8518,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt0312 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt0313(
     pub ::std::string::String,
 );
@@ -8552,7 +8552,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt031(
     pub Root2902ItemItemAlt0ItemItemAlt0310,
     pub Null,
@@ -8595,7 +8595,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt0350(
     pub ::std::string::String,
 );
@@ -8629,7 +8629,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=2 (required exactly 2)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt035(
     pub Root2902ItemItemAlt0ItemItemAlt0350,
     pub ::std::string::String,
@@ -8666,7 +8666,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=36 (required first 0 slots); accepts 0..=36 elements
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root2902ItemItemAlt0ItemItemAlt0(
     pub ::core::option::Option<Null>,
     pub ::core::option::Option<Root2902ItemItemAlt0ItemItemAlt01>,
@@ -8821,7 +8821,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt0ItemItemAlt1 {
         Ok(Root2902ItemItemAlt0ItemItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root2902ItemItemAlt0ItemItem {
     V0(Root2902ItemItemAlt0ItemItemAlt0),
     V1(Root2902ItemItemAlt0ItemItemAlt1),
@@ -8880,7 +8880,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItemAlt1 {
         Ok(Root2902ItemItemAlt1(x))
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Root2902ItemItem {
     V0(::std::vec::Vec<::std::vec::Vec<::core::option::Option<Root2902ItemItemAlt0ItemItem>>>),
     V1(Root2902ItemItemAlt1),
@@ -8916,7 +8916,7 @@ impl<'de> ::serde::Deserialize<'de> for Root2902ItemItem {
     }
 }
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root290(
     pub ::core::option::Option<Root2900>,
     pub ::std::vec::Vec<Root2901Item>,
@@ -8959,7 +8959,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root29(
     pub Root290,
 );
@@ -9046,7 +9046,7 @@ impl<'de> ::serde::Deserialize<'de> for Root372033 {
     }
 }
 /// tuple len=4 (required exactly 4)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root37203(
     pub Null,
     pub Null,
@@ -9089,7 +9089,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=5 (required exactly 5)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root3720(
     pub ::std::string::String,
     pub Null,
@@ -9135,7 +9135,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root372(
     pub Root3720,
 );
@@ -9169,7 +9169,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=3 (required exactly 3)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root37(
     pub Root370,
     pub ::std::string::String,
@@ -9243,7 +9243,7 @@ impl<'de> ::serde::Deserialize<'de> for Root580 {
     }
 }
 /// tuple len=1 (required exactly 1)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root58(
     pub Root580,
 );
@@ -9277,7 +9277,7 @@ return Err(::serde::de::Error::invalid_length(::core::usize::MAX, &"unexpected e
 }
 
 /// tuple len=66 (required exactly 66)
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Root(
     pub Root0,
     pub Root1,
